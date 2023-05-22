@@ -1,1 +1,41 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <title>BBL DRAKE PROJECT YEAHHH</title>
+        <style>
+            body{
+                background-color:lightpink;
+            }
+            #welcome-message{
+                color:deeppink;
+            }
+        </style>
+     </head>
+     <body>
+        <h1 id="welcome-message">Welcome...</h1>
+        <button id="next-button">next</button>
+     </body>
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js">         
+     </script>
+     <script>
+         var next=0;
+         $("#next-button").on("click", function(){
+             next++;
+             if(next===1){
+            $("#welcome-message").text("To an experience...");
+             }else if (next===2){
+                 $("#welcome-message").text("That you will never forget.");
+             }else if(next===3){
+                 $("#welcome-message").text("Ever.");
+             }else if(next===4){
+                 $("#welcome-message").hide();
+                 $("#next-button").hide();
+             }
+         });
+         if(next===4){
+             $("<img>").attr(src)
+         }
+     </script>
 
+</html>
