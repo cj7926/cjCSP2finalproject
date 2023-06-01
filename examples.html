@@ -59,6 +59,9 @@
         var index=0;
         $("#btn").on("click",function(){
             index++;
+            if(index>pictures.length){
+                index=0;
+            }
             for(var i=0; i<pictures.length;i++){
                 if(i===index){
                 $("#mainImage").attr("src",pictures[i]);
