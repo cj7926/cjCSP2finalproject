@@ -25,7 +25,9 @@
         $("button").on("click",function(){
             var btnPress= floor(random(pictures.length));
             for(var i=0; i<pictures.length;i++){
+                if(i===btnPress){
                 $("#mainImage").attr("src",pictures[i]);
+                }
             }
         });
     </script>
