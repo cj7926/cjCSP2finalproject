@@ -3,6 +3,7 @@
     <head>
         <meta charset="utf-8">
         <title>BBL DRAKE PROJECT YEAHHH</title>
+        <!--Styles the page-->
         <style>
            body{
             background-color: plum;
@@ -34,6 +35,7 @@
         </style>
      </head>
      <body>
+        <!--creates the main heading and information + a link to a site with more information.-->
         <h1 id="heading">Origins</h1>
         <p>
             The internet phenomenon brazilian butt lift Aubrey Drake Graham started from a ingury that Drake obtained while playing basketball. Tearing his ACL, he posted online about his condition and one thing led to another, the meme was born. It was then enhanced by the release of his collaboration with 21 savage titled "Rich Flex".
@@ -41,16 +43,20 @@
            <strong id="click">Click here for more</strong>
             <a target="_blank" href="https://knowyourmeme.com/memes/bbl-drake">Learn more here!</a>
         </p>
+        <!--inserts a youtube video-->
         <iframe width="420" height="345" src="https://youtu.be/I4DjHHVHWAEautoplay=1">
         </iframe>
+        <!--creats a nav bar-->
         <nav>
             <a class="navi" href="./index.html">Home</a>
             <a class="navi" href="./examples.html">Examples</a>
             <a class="navi" href="./memes.html">Fav Memes</a>
         </nav>
      </body>
+     <!--brings in JQUERY-->
      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
      <script>
+        //makes it so when you click a line of text more text + a picture pops up
         $("#click").on("click",function(){
             $("p").append("There were many memes created from this, such as the one shown below, but it inspired a whole plethora of pictures to spawn depicting drake in funny ways. Shoutout to Drake.");
             $("<img>").attr("src","https://i.kym-cdn.com/photos/images/newsfeed/002/182/061/4ee.png")
