@@ -3,6 +3,7 @@
     <head>
         <meta charset="utf-8">
         <title>BBL DRAKE PROJECT YEAHHH</title>
+        <!--Styles the page-->
         <style>
            body{
             background-color: lightyellow;
@@ -47,6 +48,7 @@
      </head>
      <body>
         <h1>Pictures</h1>
+        <!--Makes the main image, button and nav bar for the page-->
         <img id="mainImage" src="https://i.pinimg.com/736x/a7/35/e0/a735e0682a89e2900abf4eace20cd863.jpg">
         <button id="btn">Next Picture</button>
         <nav>
@@ -55,11 +57,14 @@
             <a href="./memes.html">Fav Memes</a>
         </nav>
      </body>
+     <!--adds JQUERY-->
      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js">
     </script>
     <script>
+        //Puts the pictures in an array so they can be called later
         var pictures=["https://i.pinimg.com/736x/a7/35/e0/a735e0682a89e2900abf4eace20cd863.jpg","https://i.pinimg.com/originals/53/b4/73/53b473f228e94fefa995a4ca0bf16c61.jpg","https://i.pinimg.com/736x/39/47/f4/3947f4c294cc388b8d94fbc5ebc8125f.jpg","https://pbs.twimg.com/media/E-XOkfDXIAA52ke.jpg","https://i.scdn.co/image/ab67706c0000da8497a917acbd50e91531d16a8a","https://pbs.twimg.com/media/E-XOkgzWQAgAfG7.jpg"];
         var index=0;
+        //Makes it so when you click the next picture button, it rotates between all of the pictures in the array and goes back to the first one when you have cycled through all of them.
         $("#btn").on("click",function(){
             index++;
             if(index>pictures.length-1){
